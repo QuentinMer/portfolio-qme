@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  min-height: 100vh;
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@theme {
+    --font-family-geist: "Geist", "Inter", "Helvetica", "Arial", sans-serif;
+    --font-family-serif: "Georgia", "Times", serif;
+    --font-family-mono: "JetBrains Mono", "Fira Code", monospace;
+    --font-family-decifer: "Decifer", serif;
+}
+
+
+@font-face {
+    font-family: "Geist";
+    src: url("../assets/fonts/geist.ttf") format("truetype");
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Decifer";
+    src: url("../assets/fonts/decifer.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@theme {
+    --bg-image: url("../assets/img/background.svg");
+}
+
+.bg-svg {
+    background-image: var(--bg-image);
+    background-size: 2000px;
+    background-position: center;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
