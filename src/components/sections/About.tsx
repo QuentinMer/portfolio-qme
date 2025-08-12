@@ -4,7 +4,7 @@ const About = () => {
         <div className="m-3 xl:m-4 flex flex-col md:flex-row justify-between items-center md:gap-x-36 px-10 pb-5">
 
 
-            <img src="src/assets/img/designer.svg" alt="photo profil" className="w-100 md:w-150 md:h-120 pt-12 md:pt-0" />
+            <img src="/img/designer.svg" alt="photo profil" className="w-100 md:w-150 md:h-120 pt-12 md:pt-0" />
 
             <div className="flex flex-col gap-10 md:justify-end items-center justify-center md:items-end">
                 <div className="flex flex-col gap-10 items-center md:items-end xl:mx-12 xl:ps-36">
@@ -15,7 +15,7 @@ const About = () => {
                         bold, and uncompromising.
                     </p>
 
-                    <img src="src/assets/img/cta.svg" alt="signature" className="w-50 md:w-50 xl:w-80 cursor-pointer" />
+                    <img src="/img/cta.svg" alt="signature" className="w-50 md:w-50 xl:w-80 cursor-pointer" />
                 </div>
             </div>
 

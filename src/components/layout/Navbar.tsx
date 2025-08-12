@@ -14,7 +14,7 @@ const Navbar = () => {
         >
           <span>works</span>
           <img 
-            src="src/assets/img/underline.svg" 
+            src="/img/underline.svg" 
             alt="underline" 
             className={`absolute -bottom-1 left-0 w-full h-auto transition-opacity duration-300 ${
               activeItem === 'works' ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'
@@ -27,7 +27,7 @@ const Navbar = () => {
         >
           <span>about</span>
           <img 
-            src="src/assets/img/underline.svg" 
+            src="/img/underline.svg" 
             alt="underline" 
             className={`absolute -bottom-1 left-0 w-full h-auto transition-opacity duration-300 ${
               activeItem === 'about' ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'
@@ -40,7 +40,7 @@ const Navbar = () => {
         >
           <span>contact</span>
           <img 
-            src="src/assets/img/underline.svg" 
+            src="/img/underline.svg" 
             alt="underline" 
             className={`absolute -bottom-1 left-0 w-full h-auto transition-opacity duration-300 ${
               activeItem === 'contact' ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'
@@ -57,7 +57,7 @@ const Navbar = () => {
         >
           <span>works</span>
           <img 
-            src="src/assets/img/underline.svg" 
+            src="/img/underline.svg" 
             alt="underline" 
             className={`absolute -bottom-1 left-0 w-full h-auto transition-opacity duration-300 ${
               activeItem === 'works' ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'
@@ -70,7 +70,7 @@ const Navbar = () => {
         >
           <span>about</span>
           <img 
-            src="src/assets/img/underline.svg" 
+            src="/img/underline.svg" 
             alt="underline" 
             className={`absolute -bottom-1 left-0 w-full h-auto transition-opacity duration-300 ${
               activeItem === 'about' ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'
@@ -83,7 +83,7 @@ const Navbar = () => {
         >
           <span>contact</span>
           <img 
-            src="src/assets/img/underline.svg" 
+            src="/img/underline.svg" 
             alt="underline" 
             className={`absolute -bottom-1 left-0 w-full h-auto transition-opacity duration-300 ${
               activeItem === 'contact' ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'
@@ -92,7 +92,7 @@ const Navbar = () => {
         </li>
        </ul>
        <img 
-  src="src/assets/img/logo-orange.svg" 
+  src="/img/logo-orange.svg" 
   alt="logo" 
   className='w-30 h-30 hidden md:block backdrop-blur-md rounded-full cursor-pointer hover:scale-105 transition-transform duration-200' 
   onClick={() => {
