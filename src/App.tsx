@@ -1,14 +1,16 @@
-import Header from "./components/layout/Header";
+import Header from "./components/sections/Header";
+import Intro from "./components/sections/Intro";
 import About from "./components/sections/About";
+import MyWorks from "./components/sections/MyWorks";
 
 function App() {
 
   return (
-    <div className="h-screen bg-svg m-0 p-0 w-full overflow-y-auto">
+    <div className="min-h-screen bg-svg m-0 p-0 w-full overflow-y-auto">
       <Header/>
-      <About/>
-      <About/>
-      <About/>
+     <Intro/>
+     <About/>
+     <MyWorks/>
     </div>
 
   )

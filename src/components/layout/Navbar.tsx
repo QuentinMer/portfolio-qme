@@ -12,7 +12,7 @@ const Navbar = () => {
           className={`cursor-pointer relative group gap-1 ${activeItem === 'works' ? '' : ''}`}
           onClick={() => setActiveItem('works')}
         >
-          <span>works</span>
+          <a href="#works">works</a>
           <img 
             src="/img/underline.svg" 
             alt="underline" 
@@ -25,7 +25,7 @@ const Navbar = () => {
           className={`cursor-pointer relative group gap-1 ${activeItem === 'about' ? '' : ''}`}
           onClick={() => setActiveItem('about')}
         >
-          <span>about</span>
+          <a href="#about">about</a>
           <img 
             src="/img/underline.svg" 
             alt="underline" 
@@ -38,7 +38,7 @@ const Navbar = () => {
           className={`cursor-pointer relative group gap-1 ${activeItem === 'contact' ? '' : ''}`}
           onClick={() => setActiveItem('contact')}
         >
-          <span>contact</span>
+          <a href="#contact">contact</a>
           <img 
             src="/img/underline.svg" 
             alt="underline" 
