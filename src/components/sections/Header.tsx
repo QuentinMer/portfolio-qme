@@ -1,4 +1,4 @@
-import TrueFocus from "../ui/TrueFocus"
+import TrueFocus from "../../bloc/Animations/TrueFocus/TrueFocus"
 
 const Header = () => {
   return (

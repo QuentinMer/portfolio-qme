@@ -1,9 +1,10 @@
 
 import { useState } from 'react'
+import Magnet from '../../bloc/Animations/Magnet/Magnet'
 
 const Intro = () => {
     const [isHovered, setIsHovered] = useState(false)
-    
+
     return (
         <div className="m-3 xl:m-4 flex flex-col md:flex-row justify-between items-center md:gap-x-36 px-10 pb-5">
 
@@ -18,15 +19,17 @@ const Intro = () => {
                         I blend front-end and UX/UI to create visual experiences that are minimal,
                         bold, and uncompromising.
                     </p>
+                    <Magnet>
 
-                    <img 
-                        src={isHovered ? "/img/cta-hover.svg" : "/img/cta.svg"} 
-                        alt="signature" 
-                        className="w-50 md:w-50 xl:w-80 cursor-pointer hover:scale-105 transition-transform duration-200" 
-                        onMouseEnter={() => setIsHovered(true)}
-                        onMouseLeave={() => setIsHovered(false)}
-                        onClick={() => setIsHovered(false)}
-                    />
+                        <img
+                            src={isHovered ? "/img/cta-hover.svg" : "/img/cta.svg"}
+                            alt="signature"
+                            className="w-50 md:w-50 xl:w-80 cursor-pointer hover:scale-105 transition-transform duration-200"
+                            onMouseEnter={() => setIsHovered(true)}
+                            onMouseLeave={() => setIsHovered(false)}
+                            onClick={() => setIsHovered(false)}
+                        />
+                    </Magnet>
                 </div>
             </div>
 
