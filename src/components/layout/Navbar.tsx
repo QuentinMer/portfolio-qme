@@ -62,12 +62,12 @@ const Navbar = () => {
       <div className='flex justify-between items-center p-5'>
         <div className='flex flex-col gap-2 justify-end items-end md:hidden'>
             <LangSwitcher />
-      <ul className="flex flex-row gap-15 md:hidden text-slate-50 mx-auto text-xl font-family-geist">
+      <ul className="flex flex-row gap-15 md:hidden text-slate-50 mx-auto text-md font-family-geist">
         <li 
           className={`cursor-pointer relative group gap-1 ${activeItem === 'works' ? '' : ''}`}
           onClick={() => setActiveItem('works')}
           >
-          <span>works</span>
+          <a href="#works">{t("nav.work")}</a>
           <img 
             src="/img/underline.svg" 
             alt="underline" 
@@ -80,7 +80,7 @@ const Navbar = () => {
           className={`cursor-pointer relative group gap-1 ${activeItem === 'about' ? '' : ''}`}
           onClick={() => setActiveItem('about')}
           >
-          <span>about</span>
+          <a href="#about">{t("nav.about")}</a>
           <img 
             src="/img/underline.svg" 
             alt="underline" 
@@ -93,7 +93,7 @@ const Navbar = () => {
           className={`cursor-pointer relative group gap-1 ${activeItem === 'contact' ? '' : ''}`}
           onClick={() => setActiveItem('contact')}
           >
-          <span>contact</span>
+          <a href="#contact">{t("nav.contact")}</a>
           <img 
             src="/img/underline.svg" 
             alt="underline" 
