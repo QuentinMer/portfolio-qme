@@ -1,0 +1,19 @@
+{
+    "intro.accroche": " Entre lignes de code et lignes d’encre, je crée des interfaces qui frappent fort. Inspiré par la technologie, la culture urbaine et le design brut, je mélange le front-end et l'UX/UI pour créer des expériences visuelles minimales, audacieuses et sans compromis.",
+    "intro.image.alt": "photo profil",
+    "intro.cta": "Envoyer moi un mail",
+    "common.language.french": "Français",
+    "common.language.english": "Anglais",
+    "about.quote": "«Le web est plus une création sociale qu’une création technique. Je l’ai conçu pour un effet social, pour aider les gens à travailler ensemble et non comme un jouet technique»",
+    "about.image.alt": "photo profil",
+    "about.image.alt-mobile": "photo profil mobile",
+    "nav.work": "Projets",
+    "nav.about": "À propos",
+    "nav.contact": "Contact",
+    "myworks.webSites": "Sites Web",
+    "myworks.otherProjects": "Autres Projets",
+    "contact.form.name": "Nom",
+    "contact.form.email": "Email",
+    "contact.form.message": "Message",
+    "contact.form.send": "Envoyer"
+}

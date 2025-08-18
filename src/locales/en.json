@@ -1,0 +1,20 @@
+{
+    "intro.accroche": "Between lines of code and lines of ink, I craft interfaces that hit span hard. Inspired by tech, urban culture, and raw design, I blend front-end and UX/UI to create visual experiences that are minimal, bold, and uncompromising.",
+    "intro.image.alt": "photo profil",
+    "intro.cta": "Send me a mail",
+    "common.language.french": "French",
+    "common.language.english": "English",
+    "about.quote": "«The web is more a social creation than a technical one. I designed it for a social effect, to help people work together and not as a technical toy»",
+    "about.image.alt": "photo profil",
+    "about.image.alt-mobile": "photo profil mobile",
+    "nav.work": "Work",
+    "nav.about": "About",
+    "nav.contact": "Contact",
+    "myworks.webSites": "Web Sites",
+    "myworks.otherProjects": "Other Projects",
+    "contact.form.name": "Name",
+    "contact.form.email": "Email",
+    "contact.form.message": "Message",
+    "contact.form.send": "Send"
+
+}
