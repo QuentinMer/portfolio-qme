@@ -69,7 +69,7 @@ const MyWorks = () => {
             sensitivity={300}
             sendToBackOnClick={false}
             cardDimensions={{ width: 350, height: 250 }}
-            cardsData={webSites}
+            cardsData={otherProjects}
           />
         </div>
       </div>
