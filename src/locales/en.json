@@ -15,6 +15,10 @@
     "contact.form.name": "Name",
     "contact.form.email": "Email",
     "contact.form.message": "Message",
-    "contact.form.send": "Send"
+    "contact.form.send": "Send",
+    "work.title1": "my",
+    "work.title2": "works",
+    "contacts.title": "contact",
+    "footer.title": "footer"
 
 }

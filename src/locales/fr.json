@@ -15,5 +15,9 @@
     "contact.form.name": "Nom",
     "contact.form.email": "Email",
     "contact.form.message": "Message",
-    "contact.form.send": "Envoyer"
+    "contact.form.send": "Envoyer",
+    "work.title1": "mes",
+    "work.title2": "projets",
+    "contacts.title": "contact",
+    "footer.title": "footer"
 }

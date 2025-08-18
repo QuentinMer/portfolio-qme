@@ -6,6 +6,8 @@ html, body, #root {
   overflow-x: hidden;
   min-height: 100vh;
   height: 100%;
+  scroll-behavior: smooth;
+
 }
 
 * {

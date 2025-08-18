@@ -26,7 +26,7 @@ const Loading = ({ onComplete }: { onComplete: () => void }) => {
              
 
 
-                <img src="/img/logo-orange.svg" alt="logo" className="w-70 h-70 md:w-90 md:h-90 relative z-10 mb-12" />
+                <img src="/img/logo-orange.webp" alt="logo" className="w-70 h-70 md:w-90 md:h-90 relative z-10 mb-12" />
 
                 <p className='text-slate-100 text-4xl md:text-6xl font-family-decifer mb-8 tracking-widest mb-12'>
                     Quentin mercier
