@@ -73,10 +73,18 @@ export default function Stack({
             id: 3,
             img: "https://images.unsplash.com/photo-1452626212852-811d58933cae?q=80&w=500&auto=format",
           },
-          {
-            id: 4,
-            img: "https://images.unsplash.com/photo-1572120360610-d971b9d7767c?q=80&w=500&auto=format",
-          },
+            {
+              id: 4,
+              img: "https://images.unsplash.com/photo-1572120360610-d971b9d7767c?q=80&w=500&auto=format",
+            },
+            {
+              id: 5,
+              img: "https://images.unsplash.com/photo-1572120360610-d971b9d7767c?q=80&w=500&auto=format",
+            },
+            {
+              id: 6,
+              img: "https://images.unsplash.com/photo-1572120360610-d971b9d7767c?q=80&w=500&auto=format",
+            },
         ]
   );
 

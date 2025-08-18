@@ -10,9 +10,12 @@ const MyWorks = () => {
     { id: 3, img: "/img/bluebear.png" },
   ];
   const otherProjects = [
-    { id: 1, img: "/img/horecaseek.png" },
-    { id: 2, img: "/img/fdemolder.png" },
-    { id: 3, img: "/img/bluebear.png" },
+    { id: 1, img: "/img/pokedex.png" },
+    { id: 2, img: "/img/simon.png" },
+    { id: 3, img: "/img/fairePart.png" },
+    { id: 4, img: "/img/meteo.png" },
+    { id: 5, img: "/img/movieData.png" },
+    { id: 6, img: "/img/codeEditor.png" },
   ];
   return (
 
