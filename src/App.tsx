@@ -14,6 +14,7 @@ function App() {
 
   return (
     <>
+    
       <div className="min-h-screen bg-svg m-0 p-0 w-full overflow-y-auto">
         <Header/>
         <Intro/>
