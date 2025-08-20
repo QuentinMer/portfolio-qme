@@ -19,5 +19,10 @@
     "work.title1": "mes",
     "work.title2": "projets",
     "contacts.title": "contact",
-    "footer.title": "footer"
+    "footer.title": "footer",
+    "banner.text": "Mon portfolio est",
+    "banner.text2": "en cours d’amélioration",
+    "banner.text3": "Certains éléments peuvent encore bouger. Merci pour votre visite !",
+    "skills.title": "compétences",
+    "nav.skills": "Compétences"
 }

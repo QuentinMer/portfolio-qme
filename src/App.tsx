@@ -7,6 +7,8 @@ import Loading from "./components/ui/Loading";
 import Contact from "./components/sections/Contact";
 import Footer from "./components/layout/Footer";
 import Hr from "./components/ui/Hr";
+import Banner from "./components/layout/Banner";
+import Skills from "./components/sections/Skills";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -17,12 +19,14 @@ function App() {
 
   return (
     <>
-    
+    <Banner/>
       <div className="min-h-screen bg-svg m-0 p-0 w-full overflow-y-auto">
         <Header/>
         <Intro/>
         <About/>
         <MyWorks/>
+        <Hr/>
+        <Skills/>
         <Hr/>
         <Contact/>
         <Footer/>

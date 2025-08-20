@@ -2,7 +2,7 @@ import TrueFocus from "../../bloc/Animations/TrueFocus/TrueFocus"
 
 const Header = () => {
   return (
-    <section className=" flex flex-col bg-black pt-24 md:pt-45" id="header">
+    <section id="header" className=" flex flex-col bg-black pt-24 md:pt-45">
 
       <div className="flex justify-center md:justify-start items-center pb-10 mx-6">
         <h1 className="text-slate-100 text-center md:text-left text-5xl sm:text-6xl md:text-8xl xl:text-9xl font-family-decifer px-5 tracking-widest">Quentin Mercier</h1>
