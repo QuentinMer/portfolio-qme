@@ -28,6 +28,7 @@ const About = () => {
         <p className="text-end text-slate-100 xl:text-2xl text-xl font-family-decifer tracking-widest mx-24 my-auto mt-6">
           — Tim Berners-Lee
         </p>
+
       </div>
     </section>
   );
