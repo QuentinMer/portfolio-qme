@@ -18,23 +18,23 @@ const Skills = () => {
                 <div className="flex flex-col items-center justify-start w-full max-w-md">
                     <h4 className="text-xl md:text-2xl font-family-decifer text-slate-50 text-center tracking-widest mb-6">Frontend</h4>
                     <div className="space-y-4 w-full">
-                        <ProgressBar skill="React" percentage={80} />
+                        <ProgressBar skill="React" percentage={70} />
                         <ProgressBar skill="TypeScript" percentage={70} />
                         <ProgressBar skill="JavaScript" percentage={70} />
-                        <ProgressBar skill="Tailwind CSS" percentage={90} />
-                        <ProgressBar skill="Next.js" percentage={80} />
-                        <ProgressBar skill="Vite" percentage={80} />
+                        <ProgressBar skill="Tailwind CSS" percentage={85} />
+                        <ProgressBar skill="Next.js" percentage={65} />
+                        <ProgressBar skill="Vite" percentage={70} />
                     </div>
                 </div>
 
                 <div className="flex flex-col items-center justify-start w-full max-w-md">
                     <h4 className="text-xl md:text-2xl font-family-decifer text-slate-50 text-center tracking-widest mb-6">UI/UX</h4>
                     <div className="space-y-4 w-full">
-                        <ProgressBar skill="Figma" percentage={85} />
-                        <ProgressBar skill="Figma Jam" percentage={85} />
-                        <ProgressBar skill="Affinity Designer" percentage={80} />
+                        <ProgressBar skill="Figma" percentage={80} />
+                        <ProgressBar skill="Figma Jam" percentage={80} />
+                        <ProgressBar skill="Affinity Designer" percentage={70} />
                         <ProgressBar skill="Affinity Publisher" percentage={70} />
-                        <ProgressBar skill="Affinity Publisher" percentage={50} />
+                        <ProgressBar skill="Affinity Photo" percentage={50} />
                     </div>
                 </div>
 
