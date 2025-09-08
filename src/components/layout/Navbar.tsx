@@ -13,18 +13,6 @@ const Navbar = () => {
         <ul className="flex flex-row gap-15 text-slate-50 mx-12 pt-10 text-xl font-family-geist">
 
           <li
-            className={`cursor-pointer relative group gap-1 ${activeItem === 'works' ? '' : ''}`}
-            onClick={() => setActiveItem('works')}
-          >
-            <a href="#works">{t("nav.work")}</a>
-            <img
-              src="/img/underline.svg"
-              alt="underline"
-              className={`absolute -bottom-1 left-0 w-full h-auto transition-opacity duration-300 ${activeItem === 'works' ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'
-                }`}
-            />
-          </li>
-          <li
             className={`cursor-pointer relative group gap-1 ${activeItem === 'about' ? '' : ''}`}
             onClick={() => setActiveItem('about')}
           >
@@ -33,6 +21,19 @@ const Navbar = () => {
               src="/img/underline.svg"
               alt="underline"
               className={`absolute -bottom-1 left-0 w-full h-auto transition-opacity duration-300 ${activeItem === 'about' ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'
+                }`}
+            />
+          </li>
+
+          <li
+            className={`cursor-pointer relative group gap-1 ${activeItem === 'works' ? '' : ''}`}
+            onClick={() => setActiveItem('works')}
+          >
+            <a href="#works">{t("nav.work")}</a>
+            <img
+              src="/img/underline.svg"
+              alt="underline"
+              className={`absolute -bottom-1 left-0 w-full h-auto transition-opacity duration-300 ${activeItem === 'works' ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'
                 }`}
             />
           </li>

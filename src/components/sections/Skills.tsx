@@ -1,4 +1,5 @@
 import { useI18n } from '../../i18n/useI18n'
+import ProgressBar from '../ui/ProgressBar'
 
 const Skills = () => {
     const { t } = useI18n()
@@ -12,32 +13,29 @@ const Skills = () => {
             <div>
                 <h4 className="text-6xl xl:text-8xl font-family-decifer text-orange-500">{t("skills.title")}</h4>
             </div>
-            <div className="flex flex-row items-center justify-between xl:gap-64 gap-0">
+            <div className="flex flex-col md:flex-row items-start justify-between xl:gap-32 md:gap-24 gap-12">
 
-                <div className="flex flex-col items-center justify-center my-24">
-                    <h4 className="text-xl md:text-2xl font-family-decifer text-slate-50 text-center tracking-widest mb-4">Frontend</h4>
-                    <div className="grid grid-cols-3 gap-x-8 gap-y-2 text-md font-family-geist text-slate-50 text-center">
-                        <div>React</div>
-                        <div>Javascript</div>
-                        <div>Typescript</div>
-                        <div>HTML</div>
-                        <div>CSS</div>
-                        <div>Tailwind</div>
-                        <div>Bootstrap</div>
-                        <div>Material UI</div>
-                        <div>Next.js</div>
-                        <div>Vite</div>
+                <div className="flex flex-col items-center justify-start w-full max-w-md">
+                    <h4 className="text-xl md:text-2xl font-family-decifer text-slate-50 text-center tracking-widest mb-6">Frontend</h4>
+                    <div className="space-y-4 w-full">
+                        <ProgressBar skill="React" percentage={80} />
+                        <ProgressBar skill="TypeScript" percentage={70} />
+                        <ProgressBar skill="JavaScript" percentage={70} />
+                        <ProgressBar skill="Tailwind CSS" percentage={90} />
+                        <ProgressBar skill="Next.js" percentage={80} />
+                        <ProgressBar skill="Vite" percentage={80} />
                     </div>
                 </div>
 
-                <div className="flex flex-col items-center justify-center my-24">
-                    <h4 className="text-xl md:text-2xl font-family-decifer text-slate-50 text-center tracking-widest mb-4">Design UI/UX</h4>
-                    <ul className='text-md font-family-geist text-slate-50 text-center space-y-2'>
-                        <li>Figma</li>
-                        <li>figjam</li>
-                        <li>afinity designer</li>
-                        <li>affinity publisher</li>
-                    </ul>
+                <div className="flex flex-col items-center justify-start w-full max-w-md">
+                    <h4 className="text-xl md:text-2xl font-family-decifer text-slate-50 text-center tracking-widest mb-6">UI/UX</h4>
+                    <div className="space-y-4 w-full">
+                        <ProgressBar skill="Figma" percentage={85} />
+                        <ProgressBar skill="Figma Jam" percentage={85} />
+                        <ProgressBar skill="Affinity Designer" percentage={80} />
+                        <ProgressBar skill="Affinity Publisher" percentage={70} />
+                        <ProgressBar skill="Affinity Publisher" percentage={50} />
+                    </div>
                 </div>
 
             </div>
