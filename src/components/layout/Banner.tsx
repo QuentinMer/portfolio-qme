@@ -37,8 +37,8 @@ export default function Banner() {
             setVisible(false);
           }}
           aria-label="Fermer la bannière"
-          className="absolute right-2 md:right-3 inline-flex items-center font-family-decifer cursor-pointer justify-center
-                     w-8 h-8 rounded-md hover:bg-black/10 hover:border-2 hover:border-black/50 focus:outline-none focus:ring-2
+          className="absolute right-0 md:right-3 inline-flex items-center font-family-decifer cursor-pointer justify-center
+                     md:w-8 md:h-8 w-6 h-6 rounded-md hover:bg-black/10 hover:border-2 hover:border-black/50 focus:outline-none focus:ring-2
                      focus:ring-black/30"
         >
           X

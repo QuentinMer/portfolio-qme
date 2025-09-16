@@ -19,7 +19,7 @@ export default function Modal({ isOpen, onClose, children }: ModalProps) {
       >
         <button
           onClick={onClose}
-          className="px-4 py-2 m-1 font-family-decifer text-2xl border border-orange-500 rounded-md hover:bg-orange-500 cursor-pointer absolute top-2 right-2"
+          className="px-4 py-2 m-1 font-family-decifer text-sm z-20 md:text-2xl border border-orange-500 rounded-md hover:bg-orange-500 cursor-pointer absolute top-2 right-2"
         >
           X
         </button>

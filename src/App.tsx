@@ -9,6 +9,7 @@ import Footer from "./components/layout/Footer";
 import Hr from "./components/ui/Hr";
 import Banner from "./components/layout/Banner";
 import Skills from "./components/sections/Skills";
+import UXUIWorks from "./components/sections/UXUIWorks";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -24,7 +25,11 @@ function App() {
         <Header/>
         <Intro/>
         <About/>
+        <div className="mx-10">
+
         <MyWorks/>
+        <UXUIWorks/>
+        </div>
         <Hr/>
         <Skills/>
         <Hr/>
