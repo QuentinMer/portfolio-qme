@@ -1,46 +1,87 @@
+import { BsSearch } from "react-icons/bs";
+import { BsFillPencilFill } from "react-icons/bs";
+import { BsFillPaletteFill } from "react-icons/bs";
+import { BsFillRocketFill } from "react-icons/bs";
+
 import { useI18n } from '../../i18n/useI18n'
-import ProgressBar from '../ui/ProgressBar'
+import ApproachCard from "../ui/ProcessCard";
 
 const Skills = () => {
     const { t } = useI18n()
     return (
-        <section
-            id="skills"
-            className="flex xl:flex-row flex-col xl:gap-64 gap-12 scroll-mt-24 md:scroll-mt-44 xl:scroll-mt-72 my-24 flex items-center justify-start md:mx-12"
-        >
+        <section id="skills" className="xl:mt-[10%] md:mt-[15%] mt-[20%]">
+            <div className="xl:mx-[10%] md:mx-[5%] mx-2">
+                {/* 2 columns */}
+                <div className="flex flex-col lg:items-start gap-12 lg:min-h-[70vh]">
+                    {/* LEFT */}
+                    <div className="flex flex-col gap-8 lg:max-w-[620px]">
 
+                        <h2 className="text-5xl sm:text-6xl md:text-7xl font-abril uppercase leading-[0.95]">
+                            {t('works.h2')}
+                        </h2>
 
-            <div>
-                <h4 className="text-6xl xl:text-8xl font-family-decifer text-orange-500">{t("skills.title")}</h4>
-            </div>
-            <div className="flex flex-col md:flex-row items-start justify-between xl:gap-32 md:gap-24 gap-12">
-            <div className="flex flex-col items-center justify-start w-full max-w-md">
-                    <h4 className="text-xl md:text-2xl font-family-decifer text-slate-50 text-center tracking-widest mb-6">UI/UX</h4>
-                    <div className="space-y-4 w-full">
-                        <ProgressBar skill="Figma" percentage={80} />
-                        <ProgressBar skill="Figma Jam" percentage={80} />
-                        <ProgressBar skill="Affinity Designer" percentage={70} />
-                        <ProgressBar skill="Affinity Publisher" percentage={70} />
-                        <ProgressBar skill="Affinity Photo" percentage={50} />
+                        <div className="space-y-1">
+                            <h3 className="text-3xl font-abril text-text-secondary">{t('works.h3')}</h3>
+                            <h3 className="text-3xl font-abril text-text-secondary">{t('works.h32')}</h3>
+                        </div>
+
                     </div>
-                </div>
-                <div className="flex flex-col items-center justify-start w-full max-w-md">
-                    <h4 className="text-xl md:text-2xl font-family-decifer text-slate-50 text-center tracking-widest mb-6">Frontend</h4>
-                    <div className="space-y-4 w-full">
-                        <ProgressBar skill="React" percentage={70} />
-                        <ProgressBar skill="TypeScript" percentage={70} />
-                        <ProgressBar skill="JavaScript" percentage={70} />
-                        <ProgressBar skill="Tailwind CSS" percentage={85} />
-                        <ProgressBar skill="Next.js" percentage={65} />
-                        <ProgressBar skill="Vite" percentage={70} />
+
+                    {/* RIGHT */}
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 lg:mx-0 mx-auto"> 
+  
+                        <ApproachCard
+                            step={1}
+                            icon={<BsSearch />}
+                            titleKey="approach.analysis.title"
+                            itemKeys={[
+                                "approach.analysis.item1",
+                                "approach.analysis.item2",
+                                "approach.analysis.item3",
+                            ]}
+                            descriptionKey="approach.p1"
+                        />
+                        <ApproachCard
+                            step={2}
+                            icon={<BsFillPencilFill />}
+                            titleKey="approach.analysis.title"
+                            itemKeys={[
+                                "approach.analysis.item1",
+                                "approach.analysis.item2",
+                                "approach.analysis.item3",
+                            ]}
+                            descriptionKey="approach.p2"
+                        />
+                        <ApproachCard
+                            step={3}
+                            icon={<BsFillPaletteFill />}
+                            titleKey="approach.analysis.title"
+                            itemKeys={[
+                                "approach.analysis.item1",
+                                "approach.analysis.item2",
+                                "approach.analysis.item3",
+                            ]}
+                            descriptionKey="approach.p3"
+                        />
+
+                        <ApproachCard
+                            step={4}
+                            icon={<BsFillRocketFill />}
+                            titleKey="approach.analysis.title"
+                            itemKeys={[
+                                "approach.analysis.item1",
+                                "approach.analysis.item2",
+                                "approach.analysis.item3",
+                            ]}
+                            descriptionKey="approach.p4"
+                        />
+
                     </div>
+
                 </div>
-
-               
-
             </div>
-
         </section>
+
     )
 }
 

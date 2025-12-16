@@ -1,46 +1,35 @@
-import { useEffect, useMemo, useState } from "react";
-import { useI18n } from "../../i18n/useI18n";
+import { useI18n } from "../../i18n/useI18n"
 
-type ButtonCtaProps = React.ButtonHTMLAttributes<HTMLButtonElement>;
-
-export default function ButtonCta({ onClick, className = "", ...props }: ButtonCtaProps) {
-  const [isHovered, setIsHovered] = useState(false);
-  const { lang, t } = useI18n();
-
-  // Convention de fichiers :
-  // /img/cta-fr.svg
-  // /img/cta-hover-fr.svg
-  const base = useMemo(() => `/img/cta-${lang}.svg`, [lang]);
-  const hover = useMemo(() => `/img/cta-hover-${lang}.svg`, [lang]);
-  const src = isHovered ? hover : base;
-
-  // Précharger la version hover pour éviter le "flash" au premier survol
-  useEffect(() => {
-    const img = new Image();
-    img.src = hover;
-  }, [hover]);
-
-  return (
-    <button
-      type="button"
-      onClick={onClick}
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-      onFocus={() => setIsHovered(true)}
-      onBlur={() => setIsHovered(false)}
-      aria-label={t("cta.label", "Contact")}
-      className={`p-0 bg-transparent border-0 ${className}`}
-      {...props}
-    >
-      <img
-        src={src}
-        alt={t("cta.alt", "Signature / Contact")}
-        className="w-50 md:w-50 xl:w-80 cursor-pointer hover:scale-105 transition-transform duration-200 select-none"
-        draggable={false}
-        // Pour un bouton "call to action", on évite le lazy
-        loading="eager"
-        decoding="async"
-      />
-    </button>
-  );
+type ButtonCtaProps = {
+  labelKey?: string        // clé i18n
+  href?: string            // lien
+  fullWidth?: boolean      // width: 100%
+  variant?: 'primary' | 'secondary' | 'tertiary'
 }
+
+const ButtonCta = ({
+  labelKey = 'cta.navbar',
+  href = '#',
+  fullWidth = false,
+  variant = 'primary',
+}: ButtonCtaProps) => {
+  const { t } = useI18n()
+
+  const base =
+    'px-10 py-2 cursor-pointer transition-all duration-200 hover:shadow-md active:shadow-none text-center'
+
+  const variants = {
+    primary: 'bg-accent text-bg-primary hover:bg-hover rounded-sm',
+    secondary: 'bg-transparent border border-accent text-accent hover:bg-hover hover:shadow-md active:shadow-none hover:text-bg-primary rounded-sm',
+    tertiary: 'bg-text-secondary hover:shadow-md active:shadow-none rounded-full text-bg-primary hover:bg-text-primary active:bg-text-primary py-4',
+  }
+
+const width = fullWidth ? 'w-full block' : 'w-fit inline-block'
+  return (
+    <a href={href} className={`${base} ${variants[variant]} ${width}`}>
+      {t(labelKey)}
+    </a>
+  )
+}
+
+export default ButtonCta

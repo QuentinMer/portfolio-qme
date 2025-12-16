@@ -15,42 +15,32 @@ html, body, #root {
 }
 
 @theme {
-    --font-family-geist: "Geist", "Inter", "Helvetica", "Arial", sans-serif;
-    --font-family-serif: "Georgia", "Times", serif;
-    --font-family-mono: "JetBrains Mono", "Fira Code", monospace;
-    --font-family-decifer: "Decifer", serif;
+    --font-jarka: "jarka", sans-serif;
+  --font-abril: "abril", sans-serif;
+  --color-bg-primary: #F4F1EC;
+  --color-bg-secondary: #EBE7E1;
+  --color-border: #D8D4CE;
+  --color-text-primary: #2C2C28;
+  --color-text-secondary: #645F59;
+  --color-accent: #A46A43;
+  --color-text-success: #6EA45C;
+  --color-text-warning: #CE4F48;
+  --color-hover: #77492A;
 }
 
 
 @font-face {
-    font-family: "Geist";
-    src: url("../assets/fonts/geist.ttf") format("truetype");
+    font-family: "jarka";
+    src: url("../assets/fonts/plusjarka.ttf") format("truetype");
     font-weight: 100 900;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: "Decifer";
-    src: url("../assets/fonts/decifer.otf") format("opentype");
+    font-family: "abril";
+    src: url("../assets/fonts/abril.ttf") format("truetype");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
-}
-
-@theme {
-    --bg-image: url("/img/background.webp");
-}
-
-.bg-svg {
-    background-image: var(--bg-image);
-    background-size: 2000px;
-    background-position: center;
-    background-repeat: repeat;
-    background-attachment: fixed;
-    min-height: 100vh;
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
 }

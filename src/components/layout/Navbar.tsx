@@ -1,128 +1,73 @@
-
 import { useState } from 'react'
-import { LangSwitcher } from '../../hook/LangSwitch'
 import { useI18n } from '../../i18n/useI18n'
+import ButtonCta from "../ui/ButtonCta"
+import CardNav from '../ui/CardNav'
+
+const navItems = [
+  { id: 'header', label: 'nav.about', href: '#header' },
+  { id: 'works', label: 'nav.work', href: '#works' },
+  { id: 'skills', label: 'nav.skills', href: '#skills' },
+  { id: 'contact', label: 'nav.contact', href: '#contact' },
+]
+
 
 const Navbar = () => {
-  const [activeItem, setActiveItem] = useState('')
   const { t } = useI18n()
+  const [activeItem, setActiveItem] = useState('about')
+
+  const linkClass = (isActive: boolean) => `
+    relative inline-block pb-1
+    after:absolute after:left-0 after:-bottom-1
+    after:h-[2px] after:bg-accent
+    after:transition-all after:duration-300
+    ${isActive ? 'after:w-full' : 'after:w-0 hover:after:w-full'}
+  `
 
   return (
-    <div className="backdrop-blur-xl md:backdrop-blur-md">
-      <div className="absolute right-0 top-0 hidden md:block">
-        <ul className="flex flex-row gap-15 text-slate-50 mx-12 pt-10 text-xl font-family-geist">
+    <header className="backdrop-blur-xl md:backdrop-blur-md border-b border-accent relative">
+      {/* MOBILE */}
+      
+        
 
-          <li
-            className={`cursor-pointer relative group gap-1 ${activeItem === 'about' ? '' : ''}`}
-            onClick={() => setActiveItem('about')}
-          >
-            <a href="#about">{t("nav.about")}</a>
-            <img
-              src="/img/underline.svg"
-              alt="underline"
-              className={`absolute -bottom-1 left-0 w-full h-auto transition-opacity duration-300 ${activeItem === 'about' ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'
-                }`}
-            />
-          </li>
+      <CardNav
+  className="sm:hidden"
+  links={[
+    { label: t('nav.about'), href: '#header' },
+    { label: t('nav.work'), href: '#works' },
+    { label: t('nav.skills'), href: '#skills' },
+    { label: t('nav.contact'), href: '#contact' },
+  ]}
+/>
 
-          <li
-            className={`cursor-pointer relative group gap-1 ${activeItem === 'works' ? '' : ''}`}
-            onClick={() => setActiveItem('works')}
-          >
-            <a href="#works">{t("nav.work")}</a>
-            <img
-              src="/img/underline.svg"
-              alt="underline"
-              className={`absolute -bottom-1 left-0 w-full h-auto transition-opacity duration-300 ${activeItem === 'works' ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'
-                }`}
-            />
-          </li>
-          <li
-            className={`cursor-pointer relative group gap-1 ${activeItem === 'skills' ? '' : ''}`}
-            onClick={() => setActiveItem('skills')}
-          >
-            <a href="#skills">{t("nav.skills")}</a>
-            <img
-              src="/img/underline.svg"
-              alt="underline"
-              className={`absolute -bottom-1 left-0 w-full h-auto transition-opacity duration-300 ${activeItem === 'skills' ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'
-                }`}
-            />
-          </li>
-          <li
-            className={`cursor-pointer relative group gap-1 ${activeItem === 'contact' ? '' : ''}`}
-            onClick={() => setActiveItem('contact')}
-          >
-            <a href="#contact">{t("nav.contact")}</a>
-            <img
-              src="/img/underline.svg"
-              alt="underline"
-              className={`absolute -bottom-1 left-0 w-full h-auto transition-opacity duration-300 ${activeItem === 'contact' ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'
-                }`}
-            />
-          </li>
-          <li>
-            <LangSwitcher />
 
-          </li>
-        </ul>
-      </div>
-      <div>
+      {/* DESKTOP */}
+      <div className="hidden sm:block">
+        <div className="flex justify-between items-center xl:mx-[10%] md:mx-[5%] sm:mx-2 py-2">
+          <span className="text-xl font-abril text-accent">2MERQ studio</span>
 
-        <div className='flex justify-between items-center p-5'>
-          <div className='flex flex-col gap-2 justify-end items-end md:hidden'>
-            <LangSwitcher />
-            <ul className="flex flex-row gap-15 md:hidden text-slate-50 mx-auto text-md font-family-geist">
-              <li
-                className={`cursor-pointer relative group gap-1 ${activeItem === 'works' ? '' : ''}`}
-                onClick={() => setActiveItem('works')}
-              >
-                <a href="#works">{t("nav.work")}</a>
-                <img
-                  src="/img/underline.svg"
-                  alt="underline"
-                  className={`absolute -bottom-1 left-0 w-full h-auto transition-opacity duration-300 ${activeItem === 'works' ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'
-                    }`}
-                />
-              </li>
-              <li
-                className={`cursor-pointer relative group gap-1 ${activeItem === 'about' ? '' : ''}`}
-                onClick={() => setActiveItem('about')}
-              >
-                <a href="#about">{t("nav.about")}</a>
-                <img
-                  src="/img/underline.svg"
-                  alt="underline"
-                  className={`absolute -bottom-1 left-0 w-full h-auto transition-opacity duration-300 ${activeItem === 'about' ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'
-                    }`}
-                />
-              </li>
-              <li
-                className={`cursor-pointer relative group gap-1 ${activeItem === 'contact' ? '' : ''}`}
-                onClick={() => setActiveItem('contact')}
-              >
-                <a href="#contact">{t("nav.contact")}</a>
-                <img
-                  src="/img/underline.svg"
-                  alt="underline"
-                  className={`absolute -bottom-1 left-0 w-full h-auto transition-opacity duration-300 ${activeItem === 'contact' ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'
-                    }`}
-                />
-              </li>
-            </ul>
-          </div>
-          <a href="#header" className='hidden md:block'>
-            <img
-              src="/img/logo-orange.svg"
-              alt="logo"
-              className='w-30 h-30  backdrop-blur-md rounded-full cursor-pointer hover:scale-105 transition-transform duration-200'
+          <ul className="flex xl:gap-20 md:gap-14 sm:gap-5">
+            {navItems.map(item => {
+              const isActive = activeItem === item.id
+              return (
+                <li key={item.id}>
+                  <a
+                    href={item.href}
+                    onClick={() => setActiveItem(item.id)}
+                    className={linkClass(isActive)}
+                  >
+                    {t(item.label)}
+                  </a>
+                </li>
+              )
+            })}
+          </ul>
 
-            />
-          </a>
-          <hr className='border-slate-50 h-px w-full mx-4 hidden md:block' />
+          <ButtonCta />
         </div>
+
+   
       </div>
-    </div>
+    </header>
   )
 }
 

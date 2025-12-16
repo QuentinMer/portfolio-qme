@@ -1,22 +1,59 @@
-import TrueFocus from "../../bloc/Animations/TrueFocus/TrueFocus"
+import { useI18n } from '../../i18n/useI18n'
+import ButtonCta from '../ui/ButtonCta'
 
 const Header = () => {
-  return (
-    <section id="header" className=" flex flex-col bg-black pt-24 md:pt-45">
+  const { t } = useI18n()
 
-      <div className="flex justify-center md:justify-start items-center pb-10 mx-6">
-        <h1 className="text-slate-100 text-center md:text-left text-5xl sm:text-6xl md:text-8xl xl:text-9xl font-family-decifer px-5 tracking-widest">Quentin Mercier</h1>
-      </div>
-      <div className="flex items-center border-b border-t border-orange-500 py-1 px-10">
-        <TrueFocus
-          sentence="web designer  frontend developer  ux/ui designer"
-          manualMode={false}
-          blurAmount={5}
-          borderColor="#FF6900"
-          animationDuration={2}
-          pauseBetweenAnimations={1}
-          wordColors={["#FF6900", "#F8FAFC", "#F8FAFC"]}
-        />
+  return (
+    <section id="header" className="xl:mt-[10%] md:mt-[15%] mt-[20%]">
+      <div className="xl:mx-[10%] md:mx-[5%] mx-2">
+        {/* 2 columns */}
+        <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-12 lg:min-h-[70vh]">
+          {/* LEFT */}
+          <div className="flex flex-col gap-8 lg:max-w-[620px]">
+            <div className="flex flex-row items-center text-xl gap-5">
+              <span className="font-abril text-accent">Quentin Mercier</span>
+              <span className="font-jarka">UX/UI designer</span>
+            </div>
+
+            <h1 className="text-5xl sm:text-6xl md:text-7xl font-abril uppercase leading-[0.95]">
+              {t('header.h1')}
+            </h1>
+
+            <div className="space-y-1">
+              <h2 className="text-3xl font-abril text-text-secondary">{t('header.h2up')}</h2>
+              <h2 className="text-3xl font-abril text-text-secondary">{t('header.h2down')}</h2>
+            </div>
+
+            <p className="font-jarka text-xl max-w-[520px]">
+              {t('header.p')}
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-4 w-full max-w-[620px]">
+              <ButtonCta
+                labelKey="cta.header1"
+                href="#contact"
+                fullWidth
+              />
+              <ButtonCta
+                labelKey="cta.header2"
+                href="#works"
+                variant="secondary"
+                fullWidth
+              />
+            </div>
+          </div>
+
+          {/* RIGHT */}
+          <div className="flex-1 flex xl:justify-end justify-center items-center md:items-center ">
+            <img
+              src="/imgs/photos/girl.webp"
+              alt="image de profil"
+              className="w-1/2 md:w-9/10 max-w-[420px] h-auto object-contain"
+            />
+          </div>
+
+        </div>
       </div>
     </section>
   )
