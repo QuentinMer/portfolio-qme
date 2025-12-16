@@ -21,5 +21,35 @@
     "approach.p1": "I begin each project with a thorough understanding of the users’ needs, the stakeholders, and the strategic objectives. This phase helps identify key challenges and define a clear direction for the rest of the project.",
     "approach.p2": "Once the objectives are clarified, I structure the information and design the first user flows. This stage establishes the functional foundations and ensures a seamless and coherent experience.",
     "approach.p3": "I design modern and efficient interfaces aligned with the brand identity and user expectations. The design system ensures visual consistency, while prototypes support testing and validation.",
-    "approach.p4": "I prepare complete deliverables for development, conduct the necessary tests, and optimise interactions as needed.The goal is to ensure a reliable production handoff and maintain continuous improvement of the product."
+    "approach.p4": "I prepare complete deliverables for development, conduct the necessary tests, and optimise interactions as needed.The goal is to ensure a reliable production handoff and maintain continuous improvement of the product.",
+    "banner.wip": "Portfolio in progress — some sections are still being refined.",
+    "banner.wipCta": "Contact me",
+    "approach.h2": "My approach",
+    "approach.h3": "Creating effective interfaces is never a matter of chance.",
+    "approach.h32": "I follow a clear, structured, and results-driven process.",
+    "approach.title1": "Analysis",
+    "approach.title2": "Concept",
+    "approach.title3": "Design",
+    "approach.title4": "Delivery",
+    "approach.analysis1": "User research",
+    "approach.analysis2": "Business goals analysis",
+    "approach.analysis3": "Existing product review (UX)",
+    "approach.analysis4": "Wireframe",
+    "approach.analysis5": "Information architecture",
+    "approach.analysis6": "User flows",
+    "approach.analysis7": "UI design",
+    "approach.analysis8": "Design system",
+    "approach.analysis9": "Interactive prototypes",
+    "approach.analysis10": "Developer handoff",
+    "approach.analysis11": "Testing & iterations",
+    "approach.analysis12": "Continuous optimisation",
+    "contact.h2": "Do you have a project?",
+    "contact.h22": "Let’s discuss it together.",
+    "contact.h3": "Need to optimize an interface or create a new product?",
+    "contact.h32": "I’m here to help you move forward efficiently.",
+    "cta.mail": "Send me a mail"
+
+
+
+  
 }

@@ -17,49 +17,49 @@ const Skills = () => {
                     <div className="flex flex-col gap-8 lg:max-w-[620px]">
 
                         <h2 className="text-5xl sm:text-6xl md:text-7xl font-abril uppercase leading-[0.95]">
-                            {t('works.h2')}
+                            {t('approach.h2')}
                         </h2>
 
                         <div className="space-y-1">
-                            <h3 className="text-3xl font-abril text-text-secondary">{t('works.h3')}</h3>
-                            <h3 className="text-3xl font-abril text-text-secondary">{t('works.h32')}</h3>
+                            <h3 className="text-3xl font-abril text-text-secondary">{t('approach.h3')}</h3>
+                            <h3 className="text-3xl font-abril text-text-secondary">{t('approach.h32')}</h3>
                         </div>
 
                     </div>
 
                     {/* RIGHT */}
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 lg:mx-0 mx-auto"> 
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 lg:gap-8 lg:mx-0 mx-auto"> 
   
                         <ApproachCard
                             step={1}
                             icon={<BsSearch />}
-                            titleKey="approach.analysis.title"
+                            titleKey="approach.title1"
                             itemKeys={[
-                                "approach.analysis.item1",
-                                "approach.analysis.item2",
-                                "approach.analysis.item3",
+                                "approach.analysis1",
+                                "approach.analysis2",
+                                "approach.analysis3",
                             ]}
                             descriptionKey="approach.p1"
                         />
                         <ApproachCard
                             step={2}
                             icon={<BsFillPencilFill />}
-                            titleKey="approach.analysis.title"
+                            titleKey="approach.title2"
                             itemKeys={[
-                                "approach.analysis.item1",
-                                "approach.analysis.item2",
-                                "approach.analysis.item3",
+                                "approach.analysis4",
+                                "approach.analysis5",
+                                "approach.analysis6",
                             ]}
                             descriptionKey="approach.p2"
                         />
                         <ApproachCard
                             step={3}
                             icon={<BsFillPaletteFill />}
-                            titleKey="approach.analysis.title"
+                            titleKey="approach.title3"
                             itemKeys={[
-                                "approach.analysis.item1",
-                                "approach.analysis.item2",
-                                "approach.analysis.item3",
+                                "approach.analysis7",
+                                "approach.analysis8",
+                                "approach.analysis9",
                             ]}
                             descriptionKey="approach.p3"
                         />
@@ -67,11 +67,11 @@ const Skills = () => {
                         <ApproachCard
                             step={4}
                             icon={<BsFillRocketFill />}
-                            titleKey="approach.analysis.title"
+                            titleKey="approach.title4"
                             itemKeys={[
-                                "approach.analysis.item1",
-                                "approach.analysis.item2",
-                                "approach.analysis.item3",
+                                "approach.analysis10",
+                                "approach.analysis11",
+                                "approach.analysis12",
                             ]}
                             descriptionKey="approach.p4"
                         />
