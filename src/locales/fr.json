@@ -47,6 +47,17 @@
     "contact.h22": "Discutons-en ensemble.",
     "contact.h3": "Besoin d’optimiser une interface ou de créer un nouveau produit ?",
     "contact.h32": "Je suis là pour vous aider à avancer efficacement",
-    "cta.mail": "Envoyez moi un mail"
+    "cta.mail": "Envoyez moi un mail",
+    "form.name": "votre nom",
+    "form.mail": "exemples@mail.com",
+    "form.name2": "Nom",
+    "form.mail2": "Email",
+    "form.message2": "Message",
+    "form.message": "votre message",
+    "form.little": "Réponse rapide et sans engagement.",
+    "form.envoyer": "Envoyer le message",
+    "contact.title": "Formulaire de contact"
+
+
 
 }

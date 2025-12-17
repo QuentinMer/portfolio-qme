@@ -50,7 +50,7 @@ const ContactModal = ({ isOpen, onClose }: ContactModalProps) => {
   if (!isOpen) return null
 
   return (
-    <div className="fixed inset-0 z-[999]">
+    <div className="fixed inset-0 z-[999] font-jarka">
       {/* overlay (clique pour fermer) */}
       <button
         aria-label="Close contact modal overlay"
@@ -61,12 +61,12 @@ const ContactModal = ({ isOpen, onClose }: ContactModalProps) => {
       {/* modal */}
       <div className="relative mx-auto mt-24 w-[92%] max-w-xl rounded-xl bg-bg-primary border border-black/15 shadow-lg overflow-hidden">
         <div className="flex items-center justify-between p-5 border-b border-black/10">
-          <h3 className="text-2xl font-abril">{t("contact.modal.title")}</h3>
+          <h3 className="text-2xl font-abril">{t("contact.title")}</h3>
 
           <button
             type="button"
             onClick={onClose}
-            className="h-10 w-10 grid place-items-center rounded-md border border-black/15 hover:bg-black/5"
+            className="h-10 w-10 grid place-items-center rounded-md border border-black/15 hover:bg-accent hover:text-bg-primary cursor-pointer"
             aria-label="Close modal"
           >
             ✕
@@ -75,34 +75,34 @@ const ContactModal = ({ isOpen, onClose }: ContactModalProps) => {
 
         <form onSubmit={onSubmit} className="p-5 flex flex-col gap-4">
           <label className="flex flex-col gap-2">
-            <span className="text-sm text-text-secondary">{t("contact.modal.name")}</span>
+            <span className="text-md font-bold text-text-primary">{t("form.name2")}</span>
             <input
               value={name}
               onChange={(e) => setName(e.target.value)}
               className="rounded-md border border-black/15 px-3 py-2 outline-none focus:ring-2 focus:ring-accent/30"
-              placeholder={t("contact.modal.namePh")}
+              placeholder={t("form.name")}
             />
           </label>
 
           <label className="flex flex-col gap-2">
-            <span className="text-sm text-text-secondary">{t("contact.modal.email")}</span>
+            <span className="text-md font-bold text-text-primary">{t("form.mail2")}</span>
             <input
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               className="rounded-md border border-black/15 px-3 py-2 outline-none focus:ring-2 focus:ring-accent/30"
-              placeholder={t("contact.modal.emailPh")}
+              placeholder={t("form.mail")}
             />
           </label>
 
           <label className="flex flex-col gap-2">
-            <span className="text-sm text-text-secondary">{t("contact.modal.message")}</span>
+            <span className="text-md font-bold text-text-primary">{t("form.message2")}</span>
             <textarea
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               rows={6}
               className="rounded-md border border-black/15 px-3 py-2 outline-none focus:ring-2 focus:ring-accent/30 resize-none"
-              placeholder={t("contact.modal.messagePh")}
+              placeholder={t("form.message")}
             />
           </label>
 
@@ -111,13 +111,14 @@ const ContactModal = ({ isOpen, onClose }: ContactModalProps) => {
               type="submit"
               className="py-3 rounded-sm bg-accent text-bg-primary hover:bg-hover"
             >
-              {t("contact.modal.send")}
+              {t("form.envoyer")}
             </button>
         
 
-          <p className="text-xs text-text-secondary pt-1">
-            {t("contact.modal.noteMailto")}
+          <p className="text-sm text-text-secondary pt-1">
+            {t("form.little")}
           </p>
+          
         </form>
       </div>
     </div>
