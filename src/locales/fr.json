@@ -22,7 +22,7 @@
     "approach.p2": "Une fois les objectifs clarifiés, je structure l’information et conçois les premiers parcours. Cette étape établit les fondations fonctionnelles et garantit une expérience fluide et cohérente.",
     "approach.p3": "J’élabore des interfaces modernes et efficaces, en accord avec l’identité de la marque et les attentes des utilisateurs. Le design system assure une cohérence visuelle, tandis que les prototypes facilitent les tests et validations.",
     "approach.p4": "Je prépare des livrables complets pour le développement, réalise les tests nécessaires et optimise les interactions au besoin. L’objectif est d’assurer une mise en production fiable et une continuité dans l’amélioration du produit.",
-    "banner.wip":"Portfolio en cours de construction — certaines pages/sections changent encore.",
+    "banner.wip": "Portfolio en cours de construction — certaines pages/sections changent encore.",
     "banner.wipCta": "Me contacter",
     "approach.h2": "Mon approche",
     "approach.h3": "Créer des interfaces efficaces ne dépend pas du hasard.",
@@ -56,8 +56,26 @@
     "form.message": "votre message",
     "form.little": "Réponse rapide et sans engagement.",
     "form.envoyer": "Envoyer le message",
-    "contact.title": "Formulaire de contact"
-
-
-
+    "contact.title": "Formulaire de contact",
+    "project.horecaseek.title": "HorecaSeek",
+    "project.horecaseek.subtitle": "Application web desktop-first pour découvrir des restaurants par région en Belgique.",
+    "project.horecaseek.context.title": "Contexte & problématique",
+    "project.horecaseek.context.text": "Trouver un bon restaurant en ligne est souvent chronophage. Les plateformes existantes sont surchargées, peu lisibles et rendent la comparaison difficile.",
+    "project.horecaseek.objectives.title": "Objectifs",
+    "project.horecaseek.objective1": "Trouver un restaurant en moins de 2 minutes",
+    "project.horecaseek.objective2": "Filtrer selon des critères horeca concrets",
+    "project.horecaseek.objective3": "Comparer facilement et sauvegarder des favoris",
+    "project.horecaseek.role.title": "Mon rôle",
+    "project.horecaseek.role.text": "UX/UI Designer — recherche, wireframes, UI design et design system.",
+    "project.horecaseek.process.title": "Processus UX",
+    "project.horecaseek.process.text": "Le travail a commencé par la définition du parcours principal et la priorisation de l’écran de listing, cœur de l’expérience.",
+    "project.horecaseek.wireframes.title": "Wireframes",
+    "project.horecaseek.wireframes.text": "Wireframes desktop low-fi axés sur la hiérarchie de l’information et la clarté des filtres.",
+    "project.horecaseek.ui.title": "UI & design system",
+    "project.horecaseek.ui.text": "Interface minimaliste et structurée, basée sur des composants réutilisables et une hiérarchie typographique forte.",
+    "project.horecaseek.result.title": "Résultat",
+    "project.horecaseek.result.text": "Une expérience claire et efficace permettant de découvrir rapidement des restaurants adaptés au contexte utilisateur.",
+    "project.horecaseek.learnings.title": "Enseignements",
+    "project.horecaseek.learnings.text": "Ce projet m’a appris à prioriser les fonctionnalités et à simplifier un produit initialement trop ambitieux.",
+    "project.common.back": "Retour à l’accueil"
 }

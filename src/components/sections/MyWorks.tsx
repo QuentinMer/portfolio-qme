@@ -51,11 +51,11 @@ const MyWorks = () => {
           {/* RIGHT */}
           <div className="flex-1 flex xl:justify-end justify-center items-center md:items-center ">
             <ProjectCard
-              imageSrc="/imgs/projects/eyebrown.webp"
+              imageSrc="/imgs/photos/desktop-horecaseek.png"
               eyebrow="EYEBROWN (UX/UI – Webflow – 2025)"
-              title="Project title"
-              description="Short description"
-              tags={['tag #1', 'tag #2', 'tag #3']}
+              title="Horecaseek"
+              description="web app pour une recherche de restaurant"
+              tags={['web app', 'ux ui', 'responsive']}
             >
               <ButtonCta
                 labelKey="cta.header1"

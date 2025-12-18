@@ -1,24 +1,18 @@
-import Contact from "./components/sections/Contact";
-import Header from "./components/sections/Header";
-import MyWorks from "./components/sections/MyWorks";
-import Skills from "./components/sections/Skills";
-import WipBanner from "./components/ui/wipBanner";
-
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Project from "./pages/projects/Horecaseek";
+import ScrollToTop from "./hook/ScrollToTop";
 
 function App() {
-
-
   return (
-    <>
-      <div className="min-h-screen m-0 p-0 w-full overflow-y-auto">
-      <WipBanner href="#contact" />
-        <Header />
-        <MyWorks />
-        <Skills />
-        <Contact/>
-      </div>
-    </>
-  )
+    <main className="pt-20">
+      <ScrollToTop/>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/projects/:slug" element={<Project />} />
+      </Routes>
+    </main>
+  );
 }
 
-export default App
+export default App;

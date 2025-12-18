@@ -18,7 +18,7 @@ type ProjectCardProps = {
     children,
   }: ProjectCardProps) => {
     return (
-      <article className="w-full max-w-sm rounded-xl bg-bg-primary shadow-sm overflow-hidden flex flex-col">
+      <article className="w-full max-w-sm rounded-xl bg-bg-primary shadow-sm overflow-hidden flex flex-col border border-text-secondary">
         
         {/* Image */}
         {imageSrc && (
