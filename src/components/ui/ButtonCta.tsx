@@ -1,16 +1,16 @@
 import { useI18n } from "../../i18n/useI18n"
 
 type ButtonCtaProps = {
-  labelKey?: string
+  labelKey: string
   href?: string
-  fullWidth?: boolean
   onClick?: () => void
+  fullWidth?: boolean
   variant?: 'primary' | 'secondary' | 'tertiary'
   type?: 'button' | 'submit'
 }
 
 const ButtonCta = ({
-  labelKey = 'cta.navbar',
+  labelKey,
   href,
   onClick,
   fullWidth = false,
@@ -33,20 +33,20 @@ const ButtonCta = ({
   const width = fullWidth ? 'w-full block' : 'w-fit inline-block'
   const className = `${base} ${variants[variant]} ${width}`
 
-  // Si onClick => button (modal)
-  if (onClick) {
+  // 👉 NAVIGATION
+  if (href) {
     return (
-      <button type={type} onClick={onClick} className={className}>
+      <a href={href} className={className}>
         {t(labelKey)}
-      </button>
+      </a>
     )
   }
 
-  // Sinon lien
+  // 👉 ACTION
   return (
-    <a href={href || '#'} className={className}>
+    <button type={type} onClick={onClick} className={className}>
       {t(labelKey)}
-    </a>
+    </button>
   )
 }
 

@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import Project from "./pages/projects/Horecaseek";
+import Project from "./pages/projects/Project";
 import ScrollToTop from "./hook/ScrollToTop";
 
 function App() {

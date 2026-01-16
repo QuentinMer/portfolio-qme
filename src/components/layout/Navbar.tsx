@@ -68,7 +68,11 @@ const Navbar = () => {
             })}
           </ul>
 
-          <ButtonCta />
+          <ButtonCta
+            labelKey="cta.navbar"
+            href="/#contact"
+            variant="primary"
+          />
         </div>
 
 

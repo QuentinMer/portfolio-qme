@@ -1,6 +1,7 @@
 import { useI18n } from '../../i18n/useI18n'
 import ButtonCta from '../../components/ui/ButtonCta'
-const HorecaSeek = () => {
+
+const Rhumer = () => {
   const { t } = useI18n()
 
   // 👉 Classe commune pour TOUTES les images
@@ -8,7 +9,7 @@ const HorecaSeek = () => {
     "w-full border border-primary rounded-md shadow-md bg-bg-primary"
 
   return (
-    <section id="horecaseek" className="xl:mt-[10%] md:mt-[15%] mt-[20%]">
+    <section id="rhumer" className="xl:mt-[10%] md:mt-[15%] mt-[20%]">
       <div className="xl:mx-[10%] md:mx-[5%] mx-2 space-y-40">
 
         {/* HERO */}
@@ -19,42 +20,42 @@ const HorecaSeek = () => {
             </span>
 
             <h1 className="text-5xl md:text-6xl font-abril uppercase leading-[0.95]">
-              {t('project.horecaseek.title')}
+              {t('project.rhumer.title')}
             </h1>
 
             <p className="font-jarka text-xl text-text-secondary max-w-[520px]">
-              {t('project.horecaseek.subtitle')}
+              {t('project.rhumer.subtitle')}
             </p>
           </div>
 
           <img
-            src="/imgs/projects/horecaseek/hero-desktop.png"
-            alt="HorecaSeek desktop interface"
-            className={`${imageClass} max-w-[620px] mx-auto`}
+            src="/imgs/projects/rhumer/hero-mobile.png"
+            alt="Rhumer mobile app"
+            className={`${imageClass} max-w-[360px] mx-auto`}
           />
         </div>
 
         {/* CONTEXT */}
         <div className="max-w-[620px] space-y-4">
           <h2 className="text-3xl font-abril uppercase">
-            {t('project.horecaseek.context.title')}
+            {t('project.rhumer.context.title')}
           </h2>
 
           <p className="font-jarka text-lg">
-            {t('project.horecaseek.context.text')}
+            {t('project.rhumer.context.text')}
           </p>
         </div>
 
         {/* OBJECTIVES */}
         <div className="max-w-[620px] space-y-4">
           <h2 className="text-3xl font-abril uppercase">
-            {t('project.horecaseek.objectives.title')}
+            {t('project.rhumer.objectives.title')}
           </h2>
 
           <ul className="font-jarka text-lg list-disc ml-5 space-y-1">
-            <li>{t('project.horecaseek.objective1')}</li>
-            <li>{t('project.horecaseek.objective2')}</li>
-            <li>{t('project.horecaseek.objective3')}</li>
+            <li>{t('project.rhumer.objective1')}</li>
+            <li>{t('project.rhumer.objective2')}</li>
+            <li>{t('project.rhumer.objective3')}</li>
           </ul>
         </div>
 
@@ -62,23 +63,23 @@ const HorecaSeek = () => {
         <div className="space-y-8">
           <div className="max-w-[620px] space-y-4">
             <h2 className="text-3xl font-abril uppercase">
-              {t('project.horecaseek.wireframes.title')}
+              {t('project.rhumer.wireframes.title')}
             </h2>
 
             <p className="font-jarka text-lg">
-              {t('project.horecaseek.wireframes.text')}
+              {t('project.rhumer.wireframes.text')}
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
             <img
-              src="/imgs/projects/horecaseek/wireframe-v1.png"
-              alt="Wireframe v1 HorecaSeek"
+              src="/imgs/projects/rhumer/wireframe-1.png"
+              alt="Rhumer wireframe 1"
               className={imageClass}
             />
             <img
-              src="/imgs/projects/horecaseek/wireframe-v2.png"
-              alt="Wireframe v2 HorecaSeek"
+              src="/imgs/projects/rhumer/wireframe-2.png"
+              alt="Rhumer wireframe 2"
               className={imageClass}
             />
           </div>
@@ -88,24 +89,29 @@ const HorecaSeek = () => {
         <div className="space-y-8">
           <div className="max-w-[620px] space-y-4">
             <h2 className="text-3xl font-abril uppercase">
-              {t('project.horecaseek.ui.title')}
+              {t('project.rhumer.ui.title')}
             </h2>
 
             <p className="font-jarka text-lg">
-              {t('project.horecaseek.ui.text')}
+              {t('project.rhumer.ui.text')}
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 items-center">
+          <div className="grid md:grid-cols-3 gap-8">
             <img
-              src="/imgs/projects/horecaseek/ui-desktop.png"
-              alt="HorecaSeek desktop UI"
+              src="/imgs/projects/rhumer/ui-1.png"
+              alt="Rhumer UI screen 1"
               className={imageClass}
             />
             <img
-              src="/imgs/projects/horecaseek/ui-mobile.png"
-              alt="HorecaSeek mobile UI"
-              className={`${imageClass} max-w-[360px] mx-auto`}
+              src="/imgs/projects/rhumer/ui-2.png"
+              alt="Rhumer UI screen 2"
+              className={imageClass}
+            />
+            <img
+              src="/imgs/projects/rhumer/hero-mobile.png"
+              alt="Rhumer UI screen 3"
+              className={imageClass}
             />
           </div>
         </div>
@@ -113,25 +119,22 @@ const HorecaSeek = () => {
         {/* RESULT */}
         <div className="max-w-[620px] space-y-4">
           <h2 className="text-3xl font-abril uppercase">
-            {t('project.horecaseek.result.title')}
+            {t('project.rhumer.result.title')}
           </h2>
 
           <p className="font-jarka text-lg">
-            {t('project.horecaseek.result.text')}
+            {t('project.rhumer.result.text')}
           </p>
         </div>
-        <div className="max-w-[620px]">
-  <ButtonCta
+        <ButtonCta
     labelKey="project.horecaseek.figma"
-    href="https://www.figma.com/design/abVhlLazSJ7Nbyo4nqIeHb/app-web?node-id=0-1&t=PvfQYMPqRBEpv071-1"
+    href="https://www.figma.com/design/B1WssowPcoDSytvAwN77rM/Rhumer-app-mobile?node-id=0-1&t=az1VMldM8za2l02Z-1"
     variant="secondary"
     fullWidth={false}
   />
-</div>
-
       </div>
     </section>
   )
 }
 
-export default HorecaSeek
+export default Rhumer

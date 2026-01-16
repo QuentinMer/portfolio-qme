@@ -199,7 +199,11 @@ const CardNav: React.FC<CardNavProps> = ({
 
           <div className="w-full pt-2">
             <div className="w-full [&>button]:w-full [&>a]:w-full">
-              <ButtonCta />
+            <ButtonCta
+            labelKey="cta.navbar"
+            href="/#contact"
+            variant="primary"
+          />
             </div>
           </div>
         </div>
