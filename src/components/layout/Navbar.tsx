@@ -34,10 +34,10 @@ const Navbar = () => {
       <CardNav
         className="sm:hidden"
         links={[
-          { label: t('nav.about'), href: '#header' },
-          { label: t('nav.work'), href: '#works' },
-          { label: t('nav.skills'), href: '#skills' },
-          { label: t('nav.contact'), href: '#contact' },
+          { label: t('nav.about'), href: '/#header' },
+          { label: t('nav.work'), href: '/#works' },
+          { label: t('nav.skills'), href: '/#skills' },
+          { label: t('nav.contact'), href: '/#contact' },
         ]}
       />
 

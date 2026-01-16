@@ -9,8 +9,8 @@ export default function Home() {
     <div className="min-h-screen m-0 p-0 w-full overflow-y-auto">
       <WipBanner href="#contact" />
       <Header />
-      <MyWorks />
       <Skills />
+      <MyWorks />
       <Contact />
     </div>
   );

@@ -5,7 +5,7 @@ const Header = () => {
   const { t } = useI18n()
 
   return (
-    <section id="header" className="xl:mt-[10%] md:mt-[15%] mt-[20%]">
+    <section id="header" className="scroll-mt-36 xl:mt-[5%] md:mt-[10%] mt-[20%]">
       <div className="xl:mx-[10%] md:mx-[5%] mx-2">
         {/* 2 columns */}
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-12 lg:min-h-[70vh]">
@@ -32,12 +32,12 @@ const Header = () => {
             <div className="flex flex-col sm:flex-row gap-4 w-full max-w-[620px]">
               <ButtonCta
                 labelKey="cta.header1"
-                href="#contact"
+                href="#works"
                 fullWidth
               />
               <ButtonCta
                 labelKey="cta.header2"
-                href="#works"
+                href="#contact"
                 variant="secondary"
                 fullWidth
               />

@@ -1,4 +1,4 @@
-import { useI18n } from "../../i18n/useI18n"
+import { useI18n } from '../../i18n/useI18n'
 
 type ButtonCtaProps = {
   labelKey: string
@@ -7,6 +7,7 @@ type ButtonCtaProps = {
   fullWidth?: boolean
   variant?: 'primary' | 'secondary' | 'tertiary'
   type?: 'button' | 'submit'
+  target?: '_self' | '_blank'
 }
 
 const ButtonCta = ({
@@ -16,11 +17,12 @@ const ButtonCta = ({
   fullWidth = false,
   variant = 'primary',
   type = 'button',
+  target = '_self',
 }: ButtonCtaProps) => {
   const { t } = useI18n()
 
   const base =
-    'px-10 py-2 cursor-pointer transition-all duration-200 hover:shadow-md active:shadow-none text-center'
+    'px-10 py-2 cursor-pointer transition-all duration-200 hover:shadow-md active:shadow-none text-center focus:outline-none focus-visible:ring-2 focus-visible:ring-accent'
 
   const variants = {
     primary: 'bg-accent text-bg-primary hover:bg-hover rounded-sm',
@@ -33,18 +35,27 @@ const ButtonCta = ({
   const width = fullWidth ? 'w-full block' : 'w-fit inline-block'
   const className = `${base} ${variants[variant]} ${width}`
 
-  // 👉 NAVIGATION
+  // 👉 LINK (navigation)
   if (href) {
     return (
-      <a href={href} className={className}>
+      <a
+        href={href}
+        target={target}
+        rel={target === '_blank' ? 'noopener noreferrer' : undefined}
+        className={className}
+      >
         {t(labelKey)}
       </a>
     )
   }
 
-  // 👉 ACTION
+  // 👉 BUTTON (action)
   return (
-    <button type={type} onClick={onClick} className={className}>
+    <button
+      type={type}
+      onClick={onClick}
+      className={className}
+    >
       {t(labelKey)}
     </button>
   )

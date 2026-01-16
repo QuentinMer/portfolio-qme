@@ -9,7 +9,7 @@ import ApproachCard from "../ui/ProcessCard";
 const Skills = () => {
     const { t } = useI18n()
     return (
-        <section id="skills" className="xl:mt-[10%] md:mt-[15%] mt-[20%]">
+        <section id="skills" className="scroll-mt-36 xl:mt-[5%] md:mt-[10%] mt-[20%]">
             <div className="xl:mx-[10%] md:mx-[5%] mx-2">
                 {/* 2 columns */}
                 <div className="flex flex-col lg:items-start gap-12 lg:min-h-[70vh]">

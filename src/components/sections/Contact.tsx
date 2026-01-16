@@ -8,7 +8,7 @@ const Contact = () => {
   const [open, setOpen] = useState(false)
 
   return (
-    <section id="contact" className="xl:mt-[10%] md:mt-[15%] mt-[20%]">
+    <section id="contact" className="scroll-mt-36 xl:mt-[5%] md:mt-[10%] mt-[20%]">
       <div className="xl:mx-[10%] md:mx-[5%] mx-2">
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-12 lg:min-h-[70vh]">
           <div className="flex flex-col gap-8 lg:max-w-[620px]">
