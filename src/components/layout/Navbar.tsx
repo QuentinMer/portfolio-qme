@@ -26,7 +26,7 @@ const Navbar = () => {
   `
 
   return (
-    <header className="backdrop-blur-xl md:backdrop-blur-md border-b border-accent relative">
+    <header className="bg-bg-primary border-b border-accent relative">
       {/* MOBILE */}
 
 
